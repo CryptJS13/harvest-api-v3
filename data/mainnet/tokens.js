@@ -305,7 +305,12 @@ module.exports = {
     chain: CHAINS_ID.MATIC_MAINNET,
     apyIconUrls: ['./icons/curve.svg', './icons/cvx.svg'],
     apyTokenSymbols: ['CRV', 'CVX'],
-    logoUrl: ['./icons/usdr.svg', './icons/am-dai.svg', './icons/am-usdc.svg', './icons/am-usdt.svg'],
+    logoUrl: [
+      './icons/usdr.svg',
+      './icons/am-dai.svg',
+      './icons/am-usdc.svg',
+      './icons/am-usdt.svg',
+    ],
     tokenNames: ['USDR', 'am3CRV'],
     farmType: 'Advanced',
     platform: ['Convex Finance'],

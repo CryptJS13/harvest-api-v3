@@ -3382,7 +3382,7 @@ module.exports = [
     rewardTokens: [addresses.FARM],
     rewardTokenSymbols: ['FARM'],
     zapperFiTokens: ['USDC', 'DAI'],
-   stakeAndDepositHelpMessage: `
+    stakeAndDepositHelpMessage: `
     <div class="help-message">
       <p> The vault supplies
        <a href="https://etherscan.io/token/${addresses.USDT}" target="_blank" rel="noopener noreferrer"> USDT </a>to Idle's Best Yield vault. Idle strategies rely on a combination of different protocols to boost your earnings (Compound, Aave, Clearpool, Euler, Morpho). The vault earns  
