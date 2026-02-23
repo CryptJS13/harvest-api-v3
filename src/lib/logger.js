@@ -39,6 +39,7 @@ function safeError(err) {
   if (typeof err === 'string') return redactString(err)
   if (typeof err !== 'object') return err
 
+  // Axios error
   if (err.isAxiosError) {
     return {
       name: err.name,
@@ -52,11 +53,28 @@ function safeError(err) {
     }
   }
 
+  // Mongoose / Mongo error
+  if (err.name?.includes('Mongo')) {
+    return {
+      name: err.name,
+      message: err.message,
+      code: err.code,
+    }
+  }
+
+  // Web3 / RPC error
+  if (err.message?.includes('revert') || err.message?.includes('execution')) {
+    return {
+      name: err.name,
+      message: err.message,
+    }
+  }
+
   return {
     name: err.name,
     message: redactString(err.message || String(err)),
     code: err.code,
-    stack: sanitizeStack(err.stack),
+    stack: process.env.NODE_ENV === 'production' ? undefined : sanitizeStack(err.stack),
   }
 }
 
