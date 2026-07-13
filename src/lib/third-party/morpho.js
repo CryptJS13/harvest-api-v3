@@ -57,11 +57,11 @@ const getV2VaultData = async (vaultAddr, chain) => {
   return queryResponse
 }
 
-const getMarketData = async (marketUniqueKey, chain) => {
+const getMarketData = async (marketId, chain) => {
   const query = `
     query {
-      marketByUniqueKey(
-        uniqueKey: "${marketUniqueKey}"
+      marketById(
+        marketId: "${marketId}"
         chainId: ${chain}
       ) {
         state {
