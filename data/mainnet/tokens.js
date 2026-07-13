@@ -640,7 +640,6 @@ module.exports = {
     ],
   },
   aaveLoop_ETH_cbETH2: {
-    inactive: true,
     isLoopingVault: true,
     loopConfig: {
       supplyAsset: addresses.BASE.V2.aaveLoop_ETH_cbETH2.SupplyAsset,
