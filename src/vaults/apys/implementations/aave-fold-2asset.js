@@ -3,6 +3,7 @@ const { getWeb3 } = require('../../../lib/web3')
 const { seamlessPool, aToken, aaveViewer } = require('../../../lib/web3/contracts')
 const { getDefiLlamaData } = require('../../../lib/third-party/defillama')
 const { getCachedContract } = require('../../../lib/web3/contractCache')
+const { getApy: getMerklApy } = require('./merkl')
 
 const getApy = async (supplyAsset, borrowAsset, poolAddr, strategyAddr, reduction, chain) => {
   const web3 = getWeb3(chain)
@@ -81,6 +82,15 @@ const getApy = async (supplyAsset, borrowAsset, poolAddr, strategyAddr, reductio
     supplyStakeAPY = 0
   }
 
+  const merklApy = new BigNumber(
+    await getMerklApy(
+      strategyAddr,
+      supplyAssetData.aTokenAddress,
+      chain,
+      1,
+    ),
+  )
+
   const supplyAPR = new BigNumber(supplyAssetData.currentLiquidityRate)
     .div(1e27)
     .times(100)
@@ -91,7 +101,9 @@ const getApy = async (supplyAsset, borrowAsset, poolAddr, strategyAddr, reductio
     .times(100)
     .times(borrowedMul)
 
-  return supplyAPR.minus(borrowAPR).times(reduction).toFixed()
+  console.log(`supplyAPR: ${supplyAPR.toFixed()}, borrowAPR: ${borrowAPR.toFixed()}`)
+
+  return supplyAPR.minus(borrowAPR).plus(merklApy).times(reduction).toFixed()
 }
 
 module.exports = {
