@@ -6,6 +6,35 @@ const strat15PercentFactor = '0.85'
 module.exports = [
   {
     chain: CHAIN_IDS.BASE,
+    id: 'IporLending_USDC',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.IporLending_USDC.NewPool,
+    collateralAddress: addresses.BASE.V2.IporLending_USDC.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    liquidityUrl: `https://app.ipor.io/fusion/base/${addresses.BASE.V2.IporLending_USDC.IporVault.toLowerCase()}`,
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+      <p> The vault supplies
+       <a href="https://basescan.org/token/${
+         addresses.BASE.V2.IporLending_USDC.Underlying
+       }" target="_blank" rel="noopener noreferrer"> USDC </a>to the
+       <a href="https://app.ipor.io/fusion/base/${addresses.BASE.V2.IporLending_USDC.IporVault.toLowerCase()}" target="_blank" rel="noopener noreferrer"> IPOR Fusion Base USDC Lending Optimizer </a>plasma vault, which dynamically allocates the USDC across multiple
+       <a href="https://app.morpho.org/base/earn" target="_blank" rel="noopener noreferrer">Morpho Blue</a> and
+       <a href="https://app.euler.finance/?network=base" target="_blank" rel="noopener noreferrer">Euler v2</a>
+       lending markets, earning lending interest and USDC-denominated token incentives.
+       At every harvest, the earned rewards are converted into more
+       <a href="https://basescan.org/token/${
+         addresses.BASE.V2.IporLending_USDC.Underlying
+       }" target="_blank" rel="noopener noreferrer"> USDC</a>.
+      </p>
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
     id: 'aeroCL_tBTC_cbBTC_new',
     type: POOL_TYPES.INCENTIVE,
     contractAddress: addresses.BASE.V2.aeroCL_tBTC_cbBTC_new.NewPool,

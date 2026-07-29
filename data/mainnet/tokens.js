@@ -40,6 +40,33 @@ module.exports = {
       },
     ],
   },
+  IporLending_USDC: {
+    chain: CHAIN_IDS.BASE,
+    apyIconUrls: ['./icons/usdc.svg'],
+    apyTokenSymbols: ['USDC'],
+    logoUrl: ['./icons/usdc.svg'],
+    tokenNames: ['USDCTH'],
+    platform: ['IPOR - Base USDC Lending Optimizer'],
+    tags: ['Beginners'],
+    tokenAddress: addresses.BASE.V2.IporLending_USDC.Underlying,
+    decimals: '6',
+    vaultAddress: addresses.BASE.V2.IporLending_USDC.NewVault,
+    strategyAddress: addresses.BASE.V2.IporLending_USDC.NewStrategy,
+    priceFunction: {
+      type: GET_PRICE_TYPES.COINGECKO_ID,
+      params: ['usd-coin'],
+    },
+    estimateApyFunctions: [
+      {
+        type: ESTIMATED_APY_TYPES.IPOR_LENDING,
+        params: [
+          addresses.BASE.V2.IporLending_USDC.IporVault,
+          profitSharingCut10Percent,
+          CHAIN_IDS.BASE,
+        ],
+      },
+    ],
+  },
   aeroCL_tBTC_cbBTC_new: {
     isCLVault: true,
     chain: CHAIN_IDS.BASE,
