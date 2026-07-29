@@ -4221,6 +4221,13 @@
         "NewStrategy": "0xce5833251fCc922acF0e21C50D9A2bcCB1202704",
         "NewPool": "0xB90C8841b3c350c67FF25CA0e6504fd8649db6D1",
         "IporVault": "0x17d0f109EE895bAD0b68AA104AA72bd0b003AD8E"
+      },
+      "IporLending_USDC": {
+        "Underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "NewVault": "0x904af90069D4485617D795bcEfb2E31E47E259cf",
+        "NewStrategy": "0x7e0A0900A2d5d1678Ce671D266Fb43179bbeEE39",
+        "NewPool": "0x1703eFd7dfD45Ef79A9BAdDd4428eAcCE357bfE0",
+        "IporVault": "0xD46a3C2D958d0a2cB098d48C48dC19FE3A710F37"
       }
     }
   },
