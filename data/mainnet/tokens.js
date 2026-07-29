@@ -45,7 +45,7 @@ module.exports = {
     apyIconUrls: ['./icons/usdc.svg'],
     apyTokenSymbols: ['USDC'],
     logoUrl: ['./icons/usdc.svg'],
-    tokenNames: ['USDCTH'],
+    tokenNames: ['USDC'],
     platform: ['IPOR - Base USDC Lending Optimizer'],
     tags: ['Beginners'],
     tokenAddress: addresses.BASE.V2.IporLending_USDC.Underlying,
