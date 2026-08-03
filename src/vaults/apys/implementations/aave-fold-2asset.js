@@ -83,12 +83,7 @@ const getApy = async (supplyAsset, borrowAsset, poolAddr, strategyAddr, reductio
   }
 
   const merklApy = new BigNumber(
-    await getMerklApy(
-      strategyAddr,
-      supplyAssetData.aTokenAddress,
-      chain,
-      1,
-    ),
+    await getMerklApy(strategyAddr, supplyAssetData.aTokenAddress, chain, 1),
   )
 
   const supplyAPR = new BigNumber(supplyAssetData.currentLiquidityRate)
