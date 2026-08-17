@@ -68,6 +68,7 @@ module.exports = {
     ],
   },
   aeroCL_tBTC_cbBTC_new: {
+    inactive: true,
     isCLVault: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/aero.svg'],
@@ -98,6 +99,7 @@ module.exports = {
     ],
   },
   aeroCL_cbETH_ETH_new: {
+    inactive: true,
     isCLVault: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/aero.svg'],
