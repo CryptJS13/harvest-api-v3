@@ -5,7 +5,7 @@ const getApy = async (morphoMarket, factor, chain) => {
   const response = await getMarketData(morphoMarket, chain)
   let result
   if (response) {
-    result = response.marketByUniqueKey.state.avgNetSupplyApy
+    result = response.marketById.state.avgNetSupplyApy
   } else {
     result = 0
   }
