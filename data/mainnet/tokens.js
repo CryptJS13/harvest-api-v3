@@ -680,7 +680,7 @@ module.exports = {
     apyTokenSymbols: ['WELL'],
     logoUrl: ['./icons/weth.svg'],
     tokenNames: ['WETH'],
-    platform: ['Aave - Looping - 2'],
+    platform: ['Aave - Looping'],
     tags: ['Beginners', 'LSD'],
     tokenAddress: addresses.BASE.V2.aaveLoop_ETH_cbETH2.Underlying,
     decimals: '18',
