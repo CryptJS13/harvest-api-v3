@@ -2,7 +2,7 @@ const BigNumber = require('bignumber.js')
 const { getWeb3 } = require('../../lib/web3')
 const { clVault, token } = require('../../lib/web3/contracts')
 const { getCachedContract } = require('../../lib/web3/contractCache')
-const { getTokenPriceByAddress } = require('../coingecko')
+const { getTokenPrice } = require('../')
 const { CHAIN_IDS } = require('../../lib/constants')
 
 const valueInUsd = async (web3, tokenAddress, amount, chain) => {
@@ -13,7 +13,7 @@ const valueInUsd = async (web3, tokenAddress, amount, chain) => {
 
   const tokenInstance = getCachedContract({ web3, abi: token.contract.abi, address: tokenAddress })
   const decimals = Number(await token.methods.getDecimals(tokenInstance))
-  const price = new BigNumber(await getTokenPriceByAddress(tokenAddress, chain))
+  const price = new BigNumber(await getTokenPrice(tokenAddress, chain))
 
   return amountBn.times(price).div(new BigNumber(10).pow(decimals))
 }

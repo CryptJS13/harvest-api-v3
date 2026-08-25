@@ -3836,6 +3836,101 @@
           }
         ]
       },
+      "aeroCL_WETH_cbBTC_4w": {
+        "Underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "NewVault": "0x83BD3E5688b0d52762A7c6D9b164C4F5A1Fe4DFb",
+        "NewStrategy": "0x6f7dac20AdE87cDFe8670E33051aCE7CD9976068",
+        "NewPool": "0xCB288dC5f93B3D7BE8298f573b4Dc4B5E1256ec8",
+        "CLPool": "0x70aCDF2Ad0bf2402C957154f944c19Ef4e1cbAE1",
+        "Wrappers": [
+          {
+            "tokenName": "WETH",
+            "tokenAddress": "0x4200000000000000000000000000000000000006",
+            "wrapperAddress": "0xB20739Df050E8F744aD091cE20DA9A8BAf7864b5"
+          },
+          {
+            "tokenName": "cbBTC",
+            "tokenAddress": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "wrapperAddress": "0x684bB8EA711D1de24b6c71D50855B8B68F991f6F"
+          }
+        ]
+      },
+      "aeroCL_WETH_cbBTC_8w": {
+        "Underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "NewVault": "0x259795BD463b4B3C6683F3bB7A7760dAC85770E4",
+        "NewStrategy": "0x81f8A3aC66E96e136F0fd3AACB7f2F33c6a7d578",
+        "NewPool": "0x2DF816bC78d307aB79B612019Ef5DDD0e0614b8F",
+        "CLPool": "0x70aCDF2Ad0bf2402C957154f944c19Ef4e1cbAE1",
+        "Wrappers": [
+          {
+            "tokenName": "WETH",
+            "tokenAddress": "0x4200000000000000000000000000000000000006",
+            "wrapperAddress": "0xc3eaE1C74FA569520De5A3E4f1e4dE18E491b064"
+          },
+          {
+            "tokenName": "cbBTC",
+            "tokenAddress": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "wrapperAddress": "0x14ADe49240FdA88509E62451F35b7bb03CC1A211"
+          }
+        ]
+      },
+      "aeroCL_WETH_cbBTC_16w": {
+        "Underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "NewVault": "0x58bfF80948b11F76066223cdF0B4956c5A584f3a",
+        "NewStrategy": "0xC4c38231bEb8Bf726Bf3888F2A80468228C5248d",
+        "NewPool": "0xDfbd9Cbb832F9c877A7EbdDD06DD237EDBeF6d9e",
+        "CLPool": "0x70aCDF2Ad0bf2402C957154f944c19Ef4e1cbAE1",
+        "Wrappers": [
+          {
+            "tokenName": "WETH",
+            "tokenAddress": "0x4200000000000000000000000000000000000006",
+            "wrapperAddress": "0xEE287D055AA7fabE1d321872351bd1A69142Ec3A"
+          },
+          {
+            "tokenName": "cbBTC",
+            "tokenAddress": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "wrapperAddress": "0x8e1aB5181C54A252eAfB27CC69473Cb82b5c8Ed1"
+          }
+        ]
+      },
+      "aeroCL_EURC_USDC_1w": {
+        "Underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "NewVault": "0x9B63f58d50Cd8Eb840a274ee14B82D1404f7e59D",
+        "NewStrategy": "0x7ad53D263df98B94f80c892f20beb81f0bB549d0",
+        "NewPool": "0xA1A656C6830EFE0E9abEd3d72ac2e17E265d673e",
+        "CLPool": "0xE846373C1a92B167b4E9cd5d8E4d6B1Db9E90EC7",
+        "Wrappers": [
+          {
+            "tokenName": "EURC",
+            "tokenAddress": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+            "wrapperAddress": "0x5Bd59c803Dd50E7cCef3B9b562a9683Ec8CA2A78"
+          },
+          {
+            "tokenName": "USDC",
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "wrapperAddress": "0x4cE33A5C957D97F6A9B69ddc98A7325f43deE11c"
+          }
+        ]
+      },
+      "aeroCL_EURC_USDC_2w": {
+        "Underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "NewVault": "0x13Cb63533ad04714f59DAf23be15655ed1B76b58",
+        "NewStrategy": "0x53eec33FF11447d9Fce5E62C96915596f0150c32",
+        "NewPool": "0xa63ADfE78DC8220AA1b7AD3f3124Dd7FB4176187",
+        "CLPool": "0xE846373C1a92B167b4E9cd5d8E4d6B1Db9E90EC7",
+        "Wrappers": [
+          {
+            "tokenName": "EURC",
+            "tokenAddress": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+            "wrapperAddress": "0x8dFe8A150eA268eeDb14B37bF8576Cbf7F3CEA23"
+          },
+          {
+            "tokenName": "USDC",
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "wrapperAddress": "0x1e99a1a00e512DAe6e5747F07F2F676d037Cd6D8"
+          }
+        ]
+      },
       "extrafi_USDC_2": {
         "Underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
         "NewVault": "0x00f281832f74D3eb391C219148EE3b7c8Bb46319",
