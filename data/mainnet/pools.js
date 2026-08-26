@@ -6,6 +6,48 @@ const strat15PercentFactor = '0.85'
 module.exports = [
   {
     chain: CHAIN_IDS.BASE,
+    id: 'euler_CSF_ETH',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.euler_CSF_ETH.NewPool,
+    collateralAddress: addresses.BASE.V2.euler_CSF_ETH.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+      <p> The vault supplies
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSF_ETH.Underlying}" target="_blank" rel="noopener noreferrer"> WETH </a>to the Clearstar Fusion Vault, earning 
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSF_ETH.Underlying}" target="_blank" rel="noopener noreferrer">WETH</a> interest.
+       At every harvest, the earned rewards are converted into more
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSF_ETH.Underlying}" target="_blank" rel="noopener noreferrer"> WETH</a>.
+      </p>
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'euler_CSN_USDC',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.euler_CSN_USDC.NewPool,
+    collateralAddress: addresses.BASE.V2.euler_CSN_USDC.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+      <p> The vault supplies
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSN_USDC.Underlying}" target="_blank" rel="noopener noreferrer"> USDC </a>to the Clearstar Noon Vault, earning 
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSN_USDC.Underlying}" target="_blank" rel="noopener noreferrer">USDC</a> interest.
+       At every harvest, the earned rewards are converted into more
+       <a href="https://basescan.org/token/${addresses.BASE.V2.euler_CSN_USDC.Underlying}" target="_blank" rel="noopener noreferrer"> USDC</a>.
+      </p>
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
     id: 'IporLending_USDC',
     type: POOL_TYPES.INCENTIVE,
     contractAddress: addresses.BASE.V2.IporLending_USDC.NewPool,
