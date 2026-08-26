@@ -1404,6 +1404,7 @@ module.exports = {
     ],
   },
   euler_YO_cbBTC: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/cbbtc.svg'],
     apyTokenSymbols: ['cbBTC'],
@@ -1706,6 +1707,7 @@ module.exports = {
     ],
   },
   morpho_YD_USDC_arbitrum: {
+    inactive: true,
     chain: CHAIN_IDS.ARBITRUM_ONE,
     apyIconUrls: ['./icons/arb.svg', './icons/morpho.svg'],
     apyTokenSymbols: ['ARB', 'MORPHO'],
@@ -1784,6 +1786,7 @@ module.exports = {
     ],
   },
   morpho_PT_USDC: {
+    inactive: true,
     chain: CHAIN_IDS.ETH_MAINNET,
     apyIconUrls: ['./icons/morpho.svg'],
     apyTokenSymbols: ['MORPHO'],
@@ -2030,6 +2033,7 @@ module.exports = {
     ],
   },
   morpho_RE7_USDC_arbitrum: {
+    inactive: true,
     chain: CHAIN_IDS.ARBITRUM_ONE,
     apyIconUrls: ['./icons/arb.svg', './icons/morpho.svg'],
     apyTokenSymbols: ['ARB', 'MORPHO'],
@@ -2084,6 +2088,7 @@ module.exports = {
     ],
   },
   morpho_SHP_USDC_arbitrum: {
+    inactive: true,
     chain: CHAIN_IDS.ARBITRUM_ONE,
     apyIconUrls: ['./icons/arb.svg', './icons/morpho.svg'],
     apyTokenSymbols: ['ARB', 'MORPHO'],
@@ -2985,6 +2990,7 @@ module.exports = {
     ],
   },
   morpho_AD_USDC: {
+    inactive: true,
     chain: CHAIN_IDS.ETH_MAINNET,
     apyIconUrls: ['./icons/morpho.svg'],
     apyTokenSymbols: ['MORPHO'],
@@ -3475,6 +3481,7 @@ module.exports = {
     ],
   },
   euler_EURC_EUL: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/eurc.svg'],
     apyTokenSymbols: ['EURC'],
@@ -3587,6 +3594,7 @@ module.exports = {
     ],
   },
   morphoCompound_ETH: {
+    inactive: true,
     chain: CHAIN_IDS.POLYGON_MAINNET,
     logoUrl: ['./icons/eth.svg'],
     tokenNames: ['ETH'],
@@ -3913,6 +3921,7 @@ module.exports = {
     ],
   },
   morphoRE7_ETH: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/morpho.svg'],
     apyTokenSymbols: ['MORPHO'],
@@ -8313,6 +8322,7 @@ module.exports = {
     ],
   },
   extrafi_KLIMA: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/extra.svg'],
     apyTokenSymbols: ['EXTRA'],
@@ -8340,6 +8350,7 @@ module.exports = {
     ],
   },
   extrafi_OVN: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/extra.svg'],
     apyTokenSymbols: ['EXTRA'],
@@ -8430,6 +8441,7 @@ module.exports = {
     ],
   },
   extrafi_USDplus: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/extra.svg'],
     apyTokenSymbols: ['EXTRA'],
@@ -10082,6 +10094,7 @@ module.exports = {
     ],
   },
   curve_TriCRV_ARB: {
+    inactive: true,
     chain: CHAIN_IDS.ARBITRUM_ONE,
     apyIconUrls: ['./icons/arb.svg'],
     apyTokenSymbols: ['ARB'],
@@ -11606,6 +11619,7 @@ module.exports = {
     cmcRewardTokenSymbols: ['iFARM', 'PENLDE'],
   },
   aave_EURS: {
+    inactive: true,
     chain: CHAIN_IDS.POLYGON_MAINNET,
     apyIconUrls: ['./icons/aave.svg'],
     apyTokenSymbols: ['AAVE'],
@@ -14075,6 +14089,7 @@ module.exports = {
     },
   },
   xBSX: {
+    inactive: true,
     chain: CHAIN_IDS.BASE,
     logoUrl: ['./icons/xbsx.svg'],
     apyIconUrls: [],
@@ -14792,6 +14807,7 @@ module.exports = {
     cmcRewardTokenSymbols: ['iFARM', 'COMP'],
   },
   USDCe_polygon: {
+    inactive: true,
     chain: CHAIN_IDS.POLYGON_MAINNET,
     apyIconUrls: ['./icons/comp.svg'],
     apyTokenSymbols: ['COMP'],
@@ -15253,6 +15269,7 @@ module.exports = {
     },
   },
   camelot_iFARM_ETH: {
+    inactive: true,
     chain: CHAIN_IDS.ARBITRUM_ONE,
     logoUrl: ['./icons/ifarm.svg', './icons/eth.svg'],
     apyIconUrls: ['./icons/grail.svg', './icons/xgrail.svg', './icons/arb.svg'],
