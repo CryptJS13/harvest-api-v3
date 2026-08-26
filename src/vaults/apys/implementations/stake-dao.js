@@ -1,28 +1,5 @@
 const BigNumber = require('bignumber.js')
-const { STAKE_DAO_API_URL } = require('../../../lib/constants.js')
-const { client } = require('../../../lib/http')
-
-const getStakeDaoAprDetails = async vaultAddress => {
-  try {
-    const response = await client.get(STAKE_DAO_API_URL, {
-      headers: {
-        Accept: 'application/json',
-        'User-Agent': 'PostmanRuntime/7.43.4',
-      },
-    })
-
-    const vaults = response?.data?.data ?? response?.data ?? []
-    const target = vaultAddress.toLowerCase()
-    const entry = (Array.isArray(vaults) ? vaults : []).find(
-      v => (v?.vault ?? '').toLowerCase() === target,
-    )
-
-    return entry?.apr?.current?.details ?? []
-  } catch (err) {
-    console.error('Stake DAO API error: ', err)
-    return []
-  }
-}
+const { getVaultAprDetails } = require('../../../lib/third-party/stake-dao')
 
 const isTradingFees = label => (label ?? '').toLowerCase().includes('trading fees')
 
@@ -30,7 +7,7 @@ const getApy = async (poolId, profitSharingFactor) => {
   let apy
 
   try {
-    const aprDetails = (await getStakeDaoAprDetails(poolId)) ?? []
+    const aprDetails = (await getVaultAprDetails(poolId)) ?? []
 
     const rewardApr = aprDetails
       .filter(d => !isTradingFees(d?.label))
