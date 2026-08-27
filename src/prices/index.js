@@ -1,3 +1,4 @@
+const { AsyncLocalStorage } = require('async_hooks')
 const { toArray, isArray } = require('lodash')
 const { cache } = require('../lib/cache')
 const { UI_DATA_FILES, GET_PRICE_TYPES, CHAIN_IDS } = require('../lib/constants')
@@ -27,11 +28,18 @@ const executePriceFunction = async (type, params) => {
   return Promise.resolve(price)
 }
 
-// Tracks price lookups that are currently on the stack. A price implementation may legitimately
-// ask for another token's price, but if that chain leads back to where it started there is no base
-// case and the promise never settles - which silently stalls the whole pool/vault poller rather
-// than surfacing an error. Detect the cycle, log it, and return 0 so the caller can carry on.
-const inFlight = new Set()
+// Tracks price lookups on the CURRENT resolution chain. A price implementation may legitimately ask
+// for another token's price, but if that chain leads back to where it started there is no base case
+// and the promise never settles - which silently stalls the whole poller rather than surfacing an
+// error. Detect the cycle, log it, and return 0 so the caller can carry on.
+//
+// This is per-async-chain, NOT global, and that distinction is the whole point. A global set cannot
+// tell a genuine cycle apart from two INDEPENDENT callers asking for the same token at the same
+// time - which happens constantly, e.g. two vaults sharing a pool token, or several potpools sharing
+// iFARM. Under a global set the second caller was told it had cycled and handed back 0, silently
+// poisoning whatever it fed. AsyncLocalStorage scopes the set to one call chain, so concurrent
+// lookups no longer see each other and only true recursion is caught.
+const resolutionChain = new AsyncLocalStorage()
 
 const getTokenPrice = async (selectedToken, ourChainId = CHAIN_IDS.ETH) => {
   const currency = 'usd'
@@ -44,19 +52,19 @@ const getTokenPrice = async (selectedToken, ourChainId = CHAIN_IDS.ETH) => {
   }
 
   const inFlightKey = `${normalizedSelectedToken}${ourChainId}`
-  if (inFlight.has(inFlightKey)) {
+  const currentChain = resolutionChain.getStore()
+  if (currentChain && currentChain.has(inFlightKey)) {
     logger.error(
       `getTokenPrice(${selectedToken}, ${ourChainId}) re-entered while already resolving; ` +
         'breaking the price cycle and returning 0',
     )
     return 0
   }
-  inFlight.add(inFlightKey)
-  try {
-    return await resolveTokenPrice(selectedToken, ourChainId, currency, cachedPriceKey1)
-  } finally {
-    inFlight.delete(inFlightKey)
-  }
+  const nextChain = new Set(currentChain || [])
+  nextChain.add(inFlightKey)
+  return resolutionChain.run(nextChain, () =>
+    resolveTokenPrice(selectedToken, ourChainId, currency, cachedPriceKey1),
+  )
 }
 
 const resolveTokenPrice = async (selectedToken, ourChainId, currency, cachedPriceKey1) => {
