@@ -40,6 +40,61 @@ module.exports = {
       },
     ],
   },
+  euler_CSF_ETH: {
+    chain: CHAIN_IDS.BASE,
+    apyIconUrls: ['./icons/eth.svg'],
+    apyTokenSymbols: ['ETH'],
+    logoUrl: ['./icons/eth.svg'],
+    tokenNames: ['ETH'],
+    platform: ['Euler - Clearstar Fusion'],
+    tags: ['Beginner'],
+    tokenAddress: addresses.BASE.V2.euler_CSF_ETH.Underlying,
+    decimals: '18',
+    vaultAddress: addresses.BASE.V2.euler_CSF_ETH.NewVault,
+    strategyAddress: addresses.BASE.V2.euler_CSF_ETH.NewStrategy,
+    priceFunction: {
+      type: GET_PRICE_TYPES.COINGECKO_ID,
+      params: ['weth'],
+    },
+    estimateApyFunctions: [
+      {
+        type: ESTIMATED_APY_TYPES.EULER_VAULT,
+        params: [
+          addresses.BASE.V2.euler_CSF_ETH.EulerVault,
+          profitSharingCut10Percent,
+          CHAIN_IDS.BASE,
+          addresses.BASE.V2.euler_CSF_ETH.NewStrategy
+        ],
+      },
+    ],
+  },
+  euler_CSN_USDC: {
+    chain: CHAIN_IDS.BASE,
+    apyIconUrls: ['./icons/usdc.svg'],
+    apyTokenSymbols: ['USDC'],
+    logoUrl: ['./icons/usdc.svg'],
+    tokenNames: ['USDC'],
+    platform: ['Euler - Clearstar Noon'],
+    tags: ['Beginner', 'Stable'],
+    tokenAddress: addresses.BASE.V2.euler_CSN_USDC.Underlying,
+    decimals: '6',
+    vaultAddress: addresses.BASE.V2.euler_CSN_USDC.NewVault,
+    strategyAddress: addresses.BASE.V2.euler_CSN_USDC.NewStrategy,
+    priceFunction: {
+      type: GET_PRICE_TYPES.COINGECKO_ID,
+      params: ['usd-coin'],
+    },
+    estimateApyFunctions: [
+      {
+        type: ESTIMATED_APY_TYPES.EULER_VAULT,
+        params: [
+          addresses.BASE.V2.euler_CSN_USDC.EulerVault,
+          profitSharingCut10Percent,
+          CHAIN_IDS.BASE,
+        ],
+      },
+    ],
+  },
   IporLending_USDC: {
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/usdc.svg'],
@@ -4900,6 +4955,7 @@ module.exports = {
     ],
   },
   aave_USDT_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -4929,6 +4985,7 @@ module.exports = {
     ],
   },
   aave_ZK_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -4958,6 +5015,7 @@ module.exports = {
     ],
   },
   venus_USDC: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg', './icons/xvs.svg'],
     apyTokenSymbols: ['ZK', 'XVS'],
@@ -5028,6 +5086,7 @@ module.exports = {
     ],
   },
   reactor_USDC: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -5176,6 +5235,7 @@ module.exports = {
     ],
   },
   zerolend_ZK_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -5443,6 +5503,7 @@ module.exports = {
     ],
   },
   venus_USDCe: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg', './icons/xvs.svg'],
     apyTokenSymbols: ['ZK', 'XVS'],
@@ -5502,6 +5563,7 @@ module.exports = {
     ],
   },
   venus_WBTC: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/xvs.svg'],
     apyTokenSymbols: ['XVS'],
@@ -5531,6 +5593,7 @@ module.exports = {
     ],
   },
   venus_ZK: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg', './icons/xvs.svg'],
     apyTokenSymbols: ['ZK', 'XVS'],
@@ -5560,6 +5623,7 @@ module.exports = {
     ],
   },
   aave_ETH_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -5589,6 +5653,7 @@ module.exports = {
     ],
   },
   aave_USDC_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -5618,6 +5683,7 @@ module.exports = {
     ],
   },
   aave_wstETH_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -5677,6 +5743,7 @@ module.exports = {
     ],
   },
   zerolend_USDC_zksync: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -10285,6 +10352,7 @@ module.exports = {
     ],
   },
   reactor_ETH: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -10313,6 +10381,7 @@ module.exports = {
     ],
   },
   reactor_USDCe: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -10370,6 +10439,7 @@ module.exports = {
     ],
   },
   reactor_WBTC: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     apyIconUrls: ['./icons/zk.svg'],
     apyTokenSymbols: ['ZK'],
@@ -10398,6 +10468,7 @@ module.exports = {
     ],
   },
   zkswap_ZK_ETH: {
+    inactive: true,
     chain: CHAIN_IDS.ZKSYNC,
     logoUrl: ['./icons/zk.svg', './icons/eth.svg'],
     apyIconUrls: ['./icons/zf.svg', './icons/zk.svg'],
