@@ -16,6 +16,9 @@ const getDecimals = instance => countFunctionCall(instance.methods.decimals().ca
 const getPricePerFullShare = instance =>
   countFunctionCall(instance.methods.getPricePerFullShare().call())
 const getPosId = instance => countFunctionCall(instance.methods.posId().call())
+// V2 twin-position vaults only; reverts on V1 single-position vaults, which callers rely on to
+// detect the version rather than configuring it in two places.
+const getBufferPosId = instance => countFunctionCall(instance.methods.bufferPosId().call())
 const getPosManager = instance => countFunctionCall(instance.methods.posManager().call())
 
 module.exports = {
@@ -31,5 +34,6 @@ module.exports = {
   getDecimals,
   getPricePerFullShare,
   getPosId,
+  getBufferPosId,
   getPosManager,
 }

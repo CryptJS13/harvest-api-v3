@@ -2764,6 +2764,7 @@
     "crvUSD": "0x417Ac0e078398C154EdFadD9Ef675d30Be60Af93",
     "CRV": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415",
     "USDC_bridged": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "AAPLc": "0xb200000000000000000000C2e324d24d7eEcd1fb",
     "WELL": "0xA88594D404727625A9437C3f886C7643872296AE",
     "WELL_old": "0xFF8adeC2221f9f4D8dfbAFa6B9a297d17603493D",
     "bSHARE": "0xD0A96c9b21565a7B73d006C02E56E09438b51C1B",
@@ -3928,6 +3929,63 @@
             "tokenName": "USDC",
             "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
             "wrapperAddress": "0x1e99a1a00e512DAe6e5747F07F2F676d037Cd6D8"
+          }
+        ]
+      },
+      "aeroCL_USDC_AAPLc_60": {
+        "Underlying": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+        "NewVault": "0x28365BE1308838a71Fb4D36281EFeE141819e448",
+        "NewStrategy": "0x1e9917422e2deB862e7ff2c15Ba872186EbFF61e",
+        "NewPool": "0x3651360d2159F19cF9eb4696302d4810E1b592b7",
+        "CLPool": "0xA3b1E3f9747065e2073722Ff4c9027d3eA4994F0",
+        "Wrappers": [
+          {
+            "tokenName": "USDC",
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "wrapperAddress": "0xa1E5F860E1b142fEa50a938d5D9290e67a671bcB"
+          },
+          {
+            "tokenName": "AAPLc",
+            "tokenAddress": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+            "wrapperAddress": "0xcf98cC1fd0284f994dd58E3748263A2AF7a31Fdc"
+          }
+        ]
+      },
+      "aeroCL_USDC_AAPLc_120": {
+        "Underlying": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+        "NewVault": "0x4106bC8e6446EC6566eA9E9B9a3e4BbC6d2b4d3f",
+        "NewStrategy": "0x6643fb9800095B543eDa1668bb8e4C322eFd0eb1",
+        "NewPool": "0x3e2254cFA2eEe80f0f695A3f68F5D12632b3A012",
+        "CLPool": "0xA3b1E3f9747065e2073722Ff4c9027d3eA4994F0",
+        "Wrappers": [
+          {
+            "tokenName": "USDC",
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "wrapperAddress": "0x139A9FA6A46BF3032D33eDc35d6D5168d3eB5536"
+          },
+          {
+            "tokenName": "AAPLc",
+            "tokenAddress": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+            "wrapperAddress": "0x1Ae36c8b677B3E745E9B4EB3dBF123C349FaE65f"
+          }
+        ]
+      },
+      "aeroCL_USDC_AAPLc_240": {
+        "Underlying": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+        "NewVault": "0x21DFa5e1486BFe8D725f11D59B32B908e783FF36",
+        "NewStrategy": "0x17AC5f9f53B3d6a05516Fb664d5c9b7FC196fcd2",
+        "NewPool": "0xaB87191B81EFB97F435D6a2D2307b7aDF57e0F2B",
+        "CLPool": "0xA3b1E3f9747065e2073722Ff4c9027d3eA4994F0",
+        "Wrappers": [
+          {
+            "tokenName": "USDC",
+            "tokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "wrapperAddress": "0x340fD4173BC539dA3960CCce598624DDEe2d7213"
+          },
+          {
+            "tokenName": "AAPLc",
+            "tokenAddress": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+            "wrapperAddress": "0x357Eee2f9a9Dd6C51762296F185FC9C986CCC20C"
           }
         ]
       },

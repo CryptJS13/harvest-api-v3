@@ -152,6 +152,51 @@ module.exports = [
   },
   {
     chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_AAPLc_60',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_60.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_60.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_AAPLc_120',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_120.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_120.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_AAPLc_240',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_240.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_240.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
     id: 'aeroCL_EURC_USDC_1w',
     type: POOL_TYPES.INCENTIVE,
     contractAddress: addresses.BASE.V2.aeroCL_EURC_USDC_1w.NewPool,
