@@ -3053,16 +3053,14 @@
         "NewVault": "0x90613e167D42CA420942082157B42AF6fc6a8087",
         "NewStrategy": "0x4Eb5f78F5dE651ceFa81a038105224fE1Dc68d02",
         "NewPool": "0x3169Cbd868851570D246CCbEF8209B64d07E5268",
-        "mToken": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
-        "doHardwork": false
+        "mToken": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22"
       },
       "moonwell_WETH": {
         "Underlying": "0x4200000000000000000000000000000000000006",
         "NewVault": "0x0B0193fAD49DE45F5E2B0A9f5D6Bc3BB7D281688",
         "NewStrategy": "0x2696E8017A422af7ee764Fa598C7AC3B75007FdB",
         "NewPool": "0x2E602943C0a1B1027B2AC998facB698fD4F689A7",
-        "mToken": "0x628ff693426583D9a7FB391E54366292F509D457",
-        "doHardwork": false
+        "mToken": "0x628ff693426583D9a7FB391E54366292F509D457"
       },
       "baseswap_axlUSDC_ETH": {
         "Underlying": "0x9A0b05F3cF748A114A4f8351802b3BFfE07100D4",
