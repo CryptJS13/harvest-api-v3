@@ -4419,6 +4419,34 @@
         "NewStrategy": "0xf61bE2D8092847B6465Cc4825C3A5e1685D0E38a",
         "NewPool": "0x13042AC68d8b647Ca877503C30e4d41e2a26C08d",
         "EulerVault": "0x07954BEB7e137101A7cbb3e47864C684aEC50524"
+      },
+      "iporFusion_AAPLc": {
+        "Underlying": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+        "NewVault": "0x35eF1F2F187b326A93a3D74441F38fDcfF85Ce48",
+        "NewStrategy": "0x5F2603d36172bA680Cd7a416Fb9e47a1A7f06438",
+        "NewPool": "0x6c09dB2B18CaEEE02F508434977Ec7d08BAA6925",
+        "IporVault": "0x31744E44d6aF88225C1dBEFbe5Df8308fAeA641B"
+      },
+      "iporFusion_GOOGLc": {
+        "Underlying": "0xb2000000000000000000002D0BA3164cc74f58B7",
+        "NewVault": "0x23cd4F9A8251193b3AC798E4E52B542d63634438",
+        "NewStrategy": "0x293b18E6909cA7A9663Cd0e90165BdF538005aAC",
+        "NewPool": "0x6B208e38d71cF728213EDD4C8be96882DDC9eb6a",
+        "IporVault": "0x01DBDB9748ECf71B1fFbb62f5cB41318531bA362"
+      },
+      "iporFusion_METAc": {
+        "Underlying": "0xb2000000000000000000008bC8786B856E61707C",
+        "NewVault": "0xfE63614d41C70DeccdF6b5770A8500e287A654A4",
+        "NewStrategy": "0x1253B5f61A0424a5b5c72e278e13A4Eb03273cf9",
+        "NewPool": "0xD3EA1006f10BD91BeC96D82C701d7b295720e9C2",
+        "IporVault": "0xCd19f18884bf388b866D05cDd1ae351133821F01"
+      },
+      "iporFusion_NVDAc": {
+        "Underlying": "0xb20000000000000000000078ee7ce2fE4908108C",
+        "NewVault": "0xD14359C2aDdb2194Cc7319084B7B2a1aC006Ec5A",
+        "NewStrategy": "0x958a2F87439244DD8727D1Ca8a5A3A3Ccf6Fc995",
+        "NewPool": "0x63379ccA4F16632b4ed88691BFDaa8985eC05871",
+        "IporVault": "0xFb132f4C6d9DCF4f80483Ea7D96C5A5dccfcFE83"
       }
     }
   },
