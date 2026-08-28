@@ -297,6 +297,156 @@ module.exports = [
   },
   {
     chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_AAPLc_20',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_20.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_AAPLc_20.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_GOOGLc_20',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_20.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_20.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_GOOGLc_40',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_40.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_40.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_GOOGLc_80',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_80.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_GOOGLc_80.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_METAc_20',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_METAc_20.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_METAc_20.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_METAc_40',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_METAc_40.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_METAc_40.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_METAc_80',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_METAc_80.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_METAc_80.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_NVDAc_20',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_20.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_20.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_NVDAc_40',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_40.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_40.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
+    id: 'aeroCL_USDC_NVDAc_80',
+    type: POOL_TYPES.INCENTIVE,
+    contractAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_80.NewPool,
+    collateralAddress: addresses.BASE.V2.aeroCL_USDC_NVDAc_80.NewVault,
+    rewardAPY: [],
+    rewardAPR: null,
+    rewardTokens: [addresses.BASE.iFARM],
+    rewardTokenSymbols: ['iFARM'],
+    stakeAndDepositHelpMessage: `
+    <div class="help-message">
+    </div>
+   `,
+  },
+  {
+    chain: CHAIN_IDS.BASE,
     id: 'aeroCL_EURC_USDC_1w',
     type: POOL_TYPES.INCENTIVE,
     contractAddress: addresses.BASE.V2.aeroCL_EURC_USDC_1w.NewPool,

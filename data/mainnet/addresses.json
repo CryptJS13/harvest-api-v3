@@ -4455,6 +4455,7 @@
         "Underlying": "0xb200000000000000000000C2e324d24d7eEcd1fb",
         "NewVault": "0xd7D53a0E4b5d0857D84cA8dff334C185F0ff78a3",
         "NewStrategy": "0x2c203aA4359C2C4d20D59efAA6681AF6E3A46407",
+        "NewPool": "0x439F9f247f531279407a61F499c66b8F4132630A",
         "CLPool": "0xA3b1E3f9747065e2073722Ff4c9027d3eA4994F0",
         "Wrappers": [
           {
@@ -4473,6 +4474,7 @@
         "Underlying": "0xB2000000000000000000002d0Ba3164cC74F58b7",
         "NewVault": "0x07c8Fa4deeaA17C54381bAfB312e8a94da2Fb243",
         "NewStrategy": "0x4bBB65BA137A6276b79846d4D6dD0eDCB211C7CD",
+        "NewPool": "0xd431952ccbea3F6BC29e971CdC3db3E6B5aB1d91",
         "CLPool": "0xB1987CAD1682841b4b641d50E520777eC5Ab5542",
         "Wrappers": [
           {
@@ -4491,6 +4493,7 @@
         "Underlying": "0xB2000000000000000000002d0Ba3164cC74F58b7",
         "NewVault": "0xa3D714a241e9D2F52DbBE90D9b6D44595A845852",
         "NewStrategy": "0x2a14cAf7F9C59E41638c0E0d150e1378e74F51e5",
+        "NewPool": "0x477f47FBd764D191AE6B56b0643f02A654C364f3",
         "CLPool": "0xB1987CAD1682841b4b641d50E520777eC5Ab5542",
         "Wrappers": [
           {
@@ -4509,6 +4512,7 @@
         "Underlying": "0xB2000000000000000000002d0Ba3164cC74F58b7",
         "NewVault": "0x8396bD130C519F7Dc2B00079D69Ee4563d343641",
         "NewStrategy": "0x9690CA6bb15A6b5ccF769Ef21835B5905E2C60Eb",
+        "NewPool": "0x979Ec363FdbF56f03a00742d8D7A9a7Fdde2Df27",
         "CLPool": "0xB1987CAD1682841b4b641d50E520777eC5Ab5542",
         "Wrappers": [
           {
@@ -4527,6 +4531,7 @@
         "Underlying": "0xb2000000000000000000008Bc8786b856E61707c",
         "NewVault": "0xbceb64f40c503739019091f0A561b377AB1041EF",
         "NewStrategy": "0xC63480Eb5048692cfb4Ce94FfF4F04bAf05d9475",
+        "NewPool": "0xF1Ca1Bba43211521f69F7F4795681E79D9724F0D",
         "CLPool": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "Wrappers": [
           {
@@ -4545,6 +4550,7 @@
         "Underlying": "0xb2000000000000000000008Bc8786b856E61707c",
         "NewVault": "0xD60B6ce9D04668ba13a505170a97808DA6Ba9D80",
         "NewStrategy": "0xfc834fF009136DD28e11f68667324EF72ECd92BA",
+        "NewPool": "0x1Bb7FBE573677eEc4A3B4dE40FC3374171A08063",
         "CLPool": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "Wrappers": [
           {
@@ -4563,6 +4569,7 @@
         "Underlying": "0xb2000000000000000000008Bc8786b856E61707c",
         "NewVault": "0xe893A09Dd4a0d9429389de4A3B74f7e9Fe820B62",
         "NewStrategy": "0xD3d2dbCcFd8aa00F0A2792a0C730d0025FB81D34",
+        "NewPool": "0xFE191a33b8b943cF6D531D5AEf3bcd75FC1ccF4a",
         "CLPool": "0xEAF57753BC382E0324a1D43F72E7027705a2273E",
         "Wrappers": [
           {
@@ -4581,6 +4588,7 @@
         "Underlying": "0xb20000000000000000000078EE7ce2fe4908108C",
         "NewVault": "0x10882A14EfC2320650D29e221051ffc7864d477E",
         "NewStrategy": "0x8c1C3Ad1F987A14e7CFAfc27C435A43876C09E86",
+        "NewPool": "0x6ecC13ab9CB49FA8721d0b62A6044f92fCF7A770",
         "CLPool": "0x853F5f1B92b16714Fe6CDA67CAad0856B83C7ab9",
         "Wrappers": [
           {
@@ -4599,6 +4607,7 @@
         "Underlying": "0xb20000000000000000000078EE7ce2fe4908108C",
         "NewVault": "0x7D46B4Dd91975055eC7267FDfAEbd39a1071D0aa",
         "NewStrategy": "0xF1c54872a1E1208dd81DF42fc05d05264AC500bB",
+        "NewPool": "0x9f0Ff9fE05736E14096744E26C3884ce7b52faa1",
         "CLPool": "0x853F5f1B92b16714Fe6CDA67CAad0856B83C7ab9",
         "Wrappers": [
           {
@@ -4617,6 +4626,7 @@
         "Underlying": "0xb20000000000000000000078EE7ce2fe4908108C",
         "NewVault": "0x16ddd4e78dF104ac9da7e2aaC57C999d03Eed635",
         "NewStrategy": "0xf2c1E214c0Fa7A34F7FAE380bdEEf493C3366e42",
+        "NewPool": "0xB1d09aa77fD13E4b1a43Dc9421ad66646B11aA16",
         "CLPool": "0x853F5f1B92b16714Fe6CDA67CAad0856B83C7ab9",
         "Wrappers": [
           {
