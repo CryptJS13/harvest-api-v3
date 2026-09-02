@@ -41,7 +41,6 @@ module.exports = {
     ],
   },
   iporFusion_AAPLc: {
-    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/aaplc.svg'],
     apyTokenSymbols: ['AAPLc'],
@@ -69,7 +68,6 @@ module.exports = {
     ],
   },
   iporFusion_GOOGLc: {
-    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/googlc.svg'],
     apyTokenSymbols: ['GOOGLc'],
@@ -97,7 +95,6 @@ module.exports = {
     ],
   },
   iporFusion_METAc: {
-    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/metac.svg'],
     apyTokenSymbols: ['METAc'],
@@ -125,7 +122,6 @@ module.exports = {
     ],
   },
   iporFusion_NVDAc: {
-    inactive: true,
     chain: CHAIN_IDS.BASE,
     apyIconUrls: ['./icons/nvdac.svg'],
     apyTokenSymbols: ['NVDAc'],
